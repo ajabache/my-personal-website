@@ -170,8 +170,8 @@ ul{
 .aside .logo a::before{
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 168px;
+    height: 58px;
     border-bottom: 5px solid var(--skin-color);
     border-left: 5px solid var(--skin-color);
     bottom: 0;
@@ -180,8 +180,8 @@ ul{
 .aside .logo a::after{
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 168px;
+    height: 58px;
     border-top: 5px solid var(--skin-color);
     border-right: 5px solid var(--skin-color);
     top: 0;
@@ -251,7 +251,7 @@ ul{
     display: block;
     border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
-    padding: 5px 15px;
+    padding: 20px 55px;
 }
 .aside .nav li a.active{
     color: var(--skin-color);
@@ -296,30 +296,31 @@ h3.my-profession{
     text-align: center;
     position: relative;
 }
-.home-img::after{
-    content: '';
+.home .home-img::after {
+    content: "";
     position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
-}
-.home-img::before{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: 20px;
-    top: -40px;
+    bottom: -10px; /* Adjust the distance of the shadow from the image */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Adjust the height of the shadow */
+    background-color: var(--skin-color); /* Adjust the shadow color and opacity */
+    z-index: -1;
+    border-radius: 50%; /* Optional: Use this if you want a rounded shadow */
+    box-shadow: 0 0 10px var(--skin-color); /* Adjust the shadow spread, blur, and color */
 }
 .home .home-img img{
     margin: auto;
     border-radius: 10px;
     height: 400px;
+    animation: float 3s ease-out infinite;
+    transform: translate(-50, -50%);
+    border: 5px solid var(--skin-color);
+    box-shadow: 0 0 10px var(--skin-color);
+}
+@keyframes float{
+    50%{
+        transform: translateY(-30px);
+    }
 }
 .about .about-content{
     flex: 0 0 100%;
@@ -563,6 +564,8 @@ h3.my-profession{
     display: none;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
 .portfolio .portfolio-item .overlay img {
     max-width: 100%;
