@@ -251,7 +251,7 @@ ul{
     display: block;
     border-bottom: 1px solid var(--bg-black-50);
     color: var(--text-black-900);
-    padding: 20px 55px;
+    padding: 20px 50px;
 }
 .aside .nav li a.active{
     color: var(--skin-color);
