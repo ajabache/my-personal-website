@@ -77,10 +77,10 @@ const nav = document.querySelector(".nav", ".logo"),
           function downloadFile() {
             // Create a dummy element
             var link = document.createElement('a');
-            link.href = 'resume/resume.pdf'; // Relative URL to the file
+            link.href = 'resume/Resume.pdf'; // Relative URL to the file
 
             // Set the file name
-            link.download = 'resume.pdf'; // Replace with the actual file name
+            link.download = 'ABACHE_Adrian_Jones_resume.pdf'; // Replace with the actual file name
 
             // Simulate a click on the link element to trigger the download
             link.click();
