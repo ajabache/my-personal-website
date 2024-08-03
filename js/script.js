@@ -1,7 +1,7 @@
 
 /*======typing animaiton======*/
 var typed = new Typed("#typed-text",{
-    strings:["Web Designer","Web Developer","Graphic Designer","Analyst","Programmer"],
+    strings:["UI/UX Designer","Web Developer","Programmer"],
     typeSpeed:100,
     BackSpeed:60,
     loop:true
@@ -77,10 +77,10 @@ const nav = document.querySelector(".nav", ".logo"),
           function downloadFile() {
             // Create a dummy element
             var link = document.createElement('a');
-            link.href = 'resume/Resume.pdf'; // Relative URL to the file
+            link.href = 'resume/Resume_Adrian Jones Abache.pdf'; // Relative URL to the file
 
             // Set the file name
-            link.download = 'ABACHE_Adrian_Jones_resume.pdf'; // Replace with the actual file name
+            link.download = 'Resume_Adrian Jones Abache.pdf'; // Replace with the actual file name
 
             // Simulate a click on the link element to trigger the download
             link.click();

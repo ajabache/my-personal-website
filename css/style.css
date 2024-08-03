@@ -267,6 +267,7 @@ ul{
 .home .home-info{
     flex: 0 0 60%;
     max-width: 60%;
+    text-align: justify;
 }
 h3.hello{
     font-size: 28px;
@@ -312,10 +313,10 @@ h3.my-profession{
     margin: auto;
     border-radius: 10px;
     height: 400px;
-    animation: float 3s ease-out infinite;
+    /*animation: float 3s ease-out infinite;*/
     transform: translate(-50, -50%);
-    border: 5px solid var(--skin-color);
-    box-shadow: 0 0 10px var(--skin-color);
+    /*border: 5px solid var(--skin-color);
+    box-shadow: 0 0 10px var(--skin-color);*/
 }
 @keyframes float{
     50%{
