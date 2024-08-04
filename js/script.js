@@ -1,7 +1,7 @@
 
 /*======typing animaiton======*/
 var typed = new Typed("#typed-text",{
-    strings:["UI/UX Designer","Web Developer","Programmer"],
+    strings:["Software Engineer","Web Developer","UI/UX Designer"],
     typeSpeed:100,
     BackSpeed:60,
     loop:true

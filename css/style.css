@@ -330,6 +330,7 @@ h3.my-profession{
 .about .about-content .about-text{
     flex: 0 0 100%;
     max-width: 100%;
+    text-align: justify;
 }
 .about .about-content .about-text h3{
     font-size: 24px;
@@ -373,46 +374,7 @@ h3.my-profession{
 .about .about-content .personal-info .buttons .btn{
     margin-top: 10px;
 }
-.about .about-content .skills{
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-top: 40px;
-}
-.about .about-content .skills .skill-item{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 15px;
-}
-.about .about-content .skills .skill-item h5{
-    line-height: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    text-transform: capitalize;
-}
-.about .about-content .skills .skill-item .progress{
-    background-color: var(--bg-black-50);
-    height: 7px;
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-}
-.about .about-content .skills .skill-item .progress .progress-in{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
-}
-.about .about-content .skills .skill-item .skill-percent{
-    position: absolute;
-    right: 0;
-    color: var(--text-black-900);
-    top: -40px;
-    font-weight: 400;
-    line-height: 40px;
-}
+
 .about .about-content .education,
 .about .about-content .experience{
     flex: 0 0 50%;
@@ -421,7 +383,7 @@ h3.my-profession{
 }
 .about .about-content h3.title{
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-weight: 700;
     color: var(--text-black-900);
 }
@@ -466,16 +428,44 @@ h3.my-profession{
 .about .about-content .timeline .timeline-date{
     font-weight: 400;
     font-size: 14px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: var(--text-black-700);
 }
+.about .about-content .timeline .timeline-grade{
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline .timeline-course{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+}
 .about .about-content .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+.about .about-content .timeline .timeline-text1 .fa{
     margin-right: 5px;
 }
 .about .about-content .timeline .timeline-title{
     font-weight: 700;
     font-size: 18px;
     color: var(--text-black-900);
+}
+.about .about-content .timeline .timeline-text1{
+    line-height: 20px;
+    font-size: 14px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-text2{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+    margin-bottom: 10px;
 }
 .about .about-content .timeline .timeline-text{
     line-height: 25px;
