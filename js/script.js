@@ -114,3 +114,56 @@ const nav = document.querySelector(".nav", ".logo"),
           
           alert("Responses stored successfully.");
         }
+//Sliding
+let slideIndex1 = 0;
+    let slideIndex2 = 0;
+    showSlides1(slideIndex1);
+    showSlides2(slideIndex2);
+
+    function moveSlides1(n) {
+        showSlides1(slideIndex1 += n);
+    }
+
+    function currentSlide1(n) {
+        showSlides1(slideIndex1 = n - 1);
+    }
+
+    function showSlides1(n) {
+        let slides = document.querySelectorAll('.slides1 img');
+        let dots = document.querySelectorAll('.dot1');
+        
+        if (n >= slides.length) slideIndex1 = 0;
+        if (n < 0) slideIndex1 = slides.length - 1;
+        
+        slides.forEach((slide, index) => {
+            slide.style.display = (index === slideIndex1) ? 'block' : 'none';
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.className = (index === slideIndex1) ? 'dot dot1 active' : 'dot dot1';
+        });
+    }
+
+    function moveSlides2(n) {
+        showSlides2(slideIndex2 += n);
+    }
+
+    function currentSlide2(n) {
+        showSlides2(slideIndex2 = n - 1);
+    }
+
+    function showSlides2(n) {
+        let slides = document.querySelectorAll('.slides2 img');
+        let dots = document.querySelectorAll('.dot2');
+        
+        if (n >= slides.length) slideIndex2 = 0;
+        if (n < 0) slideIndex2 = slides.length - 1;
+        
+        slides.forEach((slide, index) => {
+            slide.style.display = (index === slideIndex2) ? 'block' : 'none';
+        });
+        
+        dots.forEach((dot, index) => {
+            dot.className = (index === slideIndex2) ? 'dot dot2 active' : 'dot dot2';
+        });
+    }
